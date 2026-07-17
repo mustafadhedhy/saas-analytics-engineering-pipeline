@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Data files
+data/*.csv
+data/*.parquet
+data/*.xlsx
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Power BI
+*.pbix
+*.pbit
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
