@@ -1,0 +1,57 @@
+version: 2
+
+models:
+  - name: dim_accounts
+    description: Account dimension table enriched with user counts.
+    columns:
+      - name: account_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_events
+    description: Product usage event fact table.
+    columns:
+      - name: event_id
+        tests:
+          - unique
+          - not_null
+      - name: account_id
+        tests:
+          - not_null
+      - name: event_type
+        tests:
+          - not_null
+
+  - name: fct_subscriptions
+    description: Subscription fact table with active MRR calculation.
+    columns:
+      - name: subscription_id
+        tests:
+          - unique
+          - not_null
+      - name: account_id
+        tests:
+          - not_null
+
+  - name: fct_support_tickets
+    description: Support ticket fact table with resolution time calculation.
+    columns:
+      - name: ticket_id
+        tests:
+          - unique
+          - not_null
+      - name: account_id
+        tests:
+          - not_null
+
+  - name: mart_account_health
+    description: Account-level customer health mart combining usage, revenue, and support data.
+    columns:
+      - name: account_id
+        tests:
+          - unique
+          - not_null
+      - name: account_health_status
+        tests:
+          - not_null
