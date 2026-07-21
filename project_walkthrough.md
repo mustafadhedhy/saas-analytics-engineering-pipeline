@@ -576,14 +576,3 @@ The final project includes:
 - Data model documentation
 - GitHub portfolio repository
 
-## Interview Summary
-
-This project is a portfolio-ready analytics engineering pipeline.
-
-It simulates how a SaaS company can transform operational product, customer, subscription, and support data into tested analytics models and a Power BI dashboard.
-
-The project demonstrates the full workflow from data generation to data modeling, KPI validation, and final business reporting.
-
-A strong interview explanation would be:
-
-> I built an end-to-end analytics engineering pipeline for a synthetic SaaS business using Python, PostgreSQL, dbt, SQL, and Power BI. I generated realistic source data for accounts, users, subscriptions, product events, and support tickets, loaded it into PostgreSQL, created dbt staging and mart models, added data quality tests, validated business KPIs, and built a Power BI Executive Summary dashboard to track account health, active MRR, product usage, and support performance.
