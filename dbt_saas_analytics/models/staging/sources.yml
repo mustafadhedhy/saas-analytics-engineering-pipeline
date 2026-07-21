@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Raw SaaS source data loaded from generated CSV files.
+    schema: raw
+    tables:
+      - name: raw_accounts
+      - name: raw_users
+      - name: raw_subscriptions
+      - name: raw_events
+      - name: raw_support_tickets
