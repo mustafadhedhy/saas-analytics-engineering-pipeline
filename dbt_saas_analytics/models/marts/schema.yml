@@ -55,3 +55,25 @@ models:
       - name: account_health_status
         tests:
           - not_null
+
+  - name: mart_monthly_product_usage
+    description: Monthly product usage summary for Power BI dashboarding.
+    columns:
+      - name: event_month
+        tests:
+          - unique
+          - not_null
+      - name: total_events
+        tests:
+          - not_null
+
+  - name: mart_plan_revenue_summary
+    description: Plan-level revenue, usage, support, and account health summary.
+    columns:
+      - name: plan_type
+        tests:
+          - unique
+          - not_null
+      - name: total_active_mrr
+        tests:
+          - not_null
