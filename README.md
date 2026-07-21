@@ -214,23 +214,13 @@ The `.env` file is excluded from GitHub using `.gitignore`.
 * Validated row counts for all raw tables
 * Confirmed raw data is ready for dbt staging models
 
-## Next Steps
-
 ### Day 4: dbt Setup and Staging Models
 
-Planned tasks:
-
-* Initialize dbt project
-* Configure dbt connection to PostgreSQL
-* Define raw data sources
-* Build staging models for accounts, users, subscriptions, events, and support tickets
-* Add basic dbt tests for not-null and unique fields
-
-### Future Steps
-
-* Build mart models for product usage, revenue, customer health, and support performance
-* Add dbt data quality tests and documentation
-* Generate dbt lineage documentation
-* Build Power BI dashboards
-* Add dashboard screenshots and architecture diagrams
-* Write final business insights and project summary
+- Configured dbt project for PostgreSQL
+- Created dbt profile connection to the `saas_analytics` database
+- Defined raw source tables in dbt
+- Created staging models for accounts, users, subscriptions, product events, and support tickets
+- Materialized staging models as PostgreSQL views
+- Added dbt tests for unique, not-null, and relationship checks
+- Successfully ran 5 staging models
+- Successfully passed 25 dbt data tests
