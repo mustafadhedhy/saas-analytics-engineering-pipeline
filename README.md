@@ -246,3 +246,10 @@ The Executive Summary page includes:
 ### Dashboard Preview
 
 ![Executive Summary](dashboards/screenshots/executive_summary.png)
+
+## Documentation
+
+Additional project documentation:
+
+- [Business Insights](business_insights.md)
+- [Data Model Summary](data_model_summary.md)
