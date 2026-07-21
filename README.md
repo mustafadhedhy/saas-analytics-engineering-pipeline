@@ -224,3 +224,25 @@ The `.env` file is excluded from GitHub using `.gitignore`.
 - Added dbt tests for unique, not-null, and relationship checks
 - Successfully ran 5 staging models
 - Successfully passed 25 dbt data tests
+
+## Power BI Dashboard
+
+The Power BI dashboard currently includes an Executive Summary page built from the analytics-ready mart tables created with dbt.
+
+The Executive Summary page includes:
+
+- Total accounts
+- Total users
+- Active users
+- Active MRR
+- Total product events
+- Open support tickets
+- Account health distribution
+- Active MRR by plan type
+- Accounts by country
+- At-risk account detail table
+- Plan type and country slicers
+
+### Dashboard Preview
+
+![Executive Summary](dashboards/screenshots/executive_summary.png)
